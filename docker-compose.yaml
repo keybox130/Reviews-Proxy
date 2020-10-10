@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  proxy:
+    container_name: chrisbelldev/proxy-live
+    image: chrisbelldev/proxy-live:latest
+    build: ./
+    restart: always
+    ports:
+      - "80:3000"

@@ -1,0 +1,37 @@
+# version: '3'
+
+# services:
+#   # proxy:
+#   #   container_name: proxy
+#   #   restart: always
+#   #   build: ./proxy
+#   #   image: chrisbelldev/proxy:latest
+#   #   ports:
+#   #     - "3000:3000"
+#   # gallery:
+#   #   container_name: gallery
+#   #   restart: always
+#   #   build: ./Gallery-Service
+#   #   image: chrisbelldev/gallery:latest
+#   #   ports:
+#   #     - "3001:3001"
+#   # booking:
+#   #   container_name: booking
+#   #   restart: always
+#   #   build: ./Booking-Service
+#   #   image: chrisbelldev/booking:latest
+#   #   ports:
+#   #     - "3002:3002"
+#   reviews:
+#     container_name: reviews
+#     restart: always
+#     build: ./Reviews-Service
+#     image: chrisbelldev/reviews:latest
+#     ports:
+#       - "3003:3003"
+#   # places:
+#   #   container_name: places
+#   #   restart: always
+#   #   build: ./More-Places-Service
+#   #   ports:
+#   #     - "3004:3004"
