@@ -1,0 +1,20 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+input, form, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#booking-wrapper {
+  min-width: 100vw;
+  min-height: 600px;
+}
+
+.booking {
+  position: absolute;
+  right: 3px;
+  top: 900px;
+}

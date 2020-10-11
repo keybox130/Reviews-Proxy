@@ -16,15 +16,18 @@ console.log(path.join(__dirname, '../client/'));
 // });
 
 // proxy to gallery api
-// app.use('/gallery/stays/:id', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
+app.use('/gallery/stays/:id', createProxyMiddleware({ target: 'http://54.205.240.204/', changeOrigin: true }));
+app.use('/gallery/list', createProxyMiddleware({ target: 'http://54.205.240.204/', changeOrigin: true }));
+
 // proxy to review api
 app.use('/reviews/stays/:id', createProxyMiddleware({ target: `http://54.67.125.56/`, changeOrigin: true }));
 // proxy to review assets
-// app.use('/reviews-static', createProxyMiddleware({ target: 'http://54.67.125.56/', changeOrigin: true }));
+app.use('/reviews-static', createProxyMiddleware({ target: 'http://54.67.125.56/', changeOrigin: true }));
 // proxy to booking api
 app.use('/booking/', createProxyMiddleware({ target: 'http://3.93.149.53/', changeOrigin: true }));
 // proxy to more-places api
-// app.use('/more-places/', createProxyMiddleware({ target: 'http://localhost:3004', changeOrigin: true }));
+app.use('/more-places/', createProxyMiddleware({ target: 'http://18.144.61.238/', changeOrigin: true }));
+app.use('/more-places/list', createProxyMiddleware({ target: 'http://18.144.61.238/', changeOrigin: true }))
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
